@@ -64,19 +64,46 @@ def apply_custom_styles():
         /* --------------------------------------
            Inputs & Controls
            -------------------------------------- */
-        .stTextInput>div>div>input, 
-        .stTextArea>div>div>textarea, 
-        .stSelectbox>div>div>select {
+        /* Force white background and dark text for all text inputs */
+        .stTextInput input, .stTextArea textarea, .stSelectbox select, .stNumberInput input {
+            color: #1e293b !important;
             background-color: #ffffff !important;
-            color: #0f172a !important; /* Dark text in inputs */
+        }
+
+        /* Target the specific heavy grouping divs Streamlit uses for inputs */
+        .stTextInput>div>div>input, 
+        .stTextArea>div>div>textarea,
+        div[data-baseweb="select"] > div {
+            background-color: #ffffff !important;
+            color: #1e293b !important;
             border: 1px solid #cbd5e1;
             border-radius: 8px;
-            font-weight: 500;
+        }
+
+        /* Fix Selectbox dropdown arrow and text */
+        div[data-baseweb="select"] span {
+            color: #1e293b !important;
+        }
+        
+        /* Dropdown menu items */
+        div[data-baseweb="popover"] div, div[data-baseweb="menu"] div {
+            background-color: #ffffff !important;
+            color: #1e293b !important;
+        }
+
+        /* File Uploader */
+        .stFileUploader > div > div {
+            background-color: #ffffff !important;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .stFileUploader small {
+            color: #64748b !important;
         }
 
         /* Input Labels */
         .stTextInput label, .stTextArea label, .stSelectbox label, .stFileUploader label {
-            color: #334155 !important; /* Slate-700 */
+            color: #334155 !important;
             font-weight: 600 !important;
             font-size: 0.95rem;
         }
@@ -84,11 +111,11 @@ def apply_custom_styles():
         /* --------------------------------------
            Buttons
            -------------------------------------- */
-        /* Primary Keys */
-        .stButton>button {
-            border: 1px solid #e2e8f0;
-            background-color: #ffffff;
-            color: #1e293b !important; /* Dark slate for secondary buttons */
+        /* Default/Secondary Buttons - Force White Background */
+        .stButton > button {
+            background-color: #ffffff !important;
+            color: #1e293b !important;
+            border: 1px solid #e2e8f0 !important;
             border-radius: 8px;
             padding: 0.6rem 1.25rem;
             font-weight: 600;
@@ -96,62 +123,58 @@ def apply_custom_styles():
             transition: all 0.2s;
         }
 
-        .stButton>button:hover {
-            border-color: #cbd5e1;
-            background-color: #f8fafc;
-            color: #0f172a !important;
+        .stButton > button:hover {
+            border-color: #6366f1 !important;
+            color: #4338ca !important;
+            background-color: #f8fafc !important;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        /* Specifically target Primary Buttons to keep them distinct */
-        .stButton>button[data-testid="stBaseButton-primary"] {
-            background: var(--primary-gradient);
+        /* Button Text Paragraphs */
+        .stButton > button p {
+            color: inherit !important;
+        }
+
+        /* Primary Buttons - Gradient Background */
+        .stButton > button[data-testid="stBaseButton-primary"] {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
             color: #ffffff !important;
-            border: none;
-            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+            border: none !important;
         }
 
-        .stButton>button[data-testid="stBaseButton-primary"]:hover {
-            transform: translateY(-1px);
+        .stButton > button[data-testid="stBaseButton-primary"] p {
+             color: #ffffff !important;
+        }
+
+        .stButton > button[data-testid="stBaseButton-primary"]:hover {
+            opacity: 0.95;
             box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
-        }
-        
-        /* Button text specific override */
-        .stButton>button p {
-            font-weight: 600;
-        }
-
-        /* --------------------------------------
-           Helper Text & Captions
-           -------------------------------------- */
-        .stCaption, [data-testid="stCaptionContainer"], .stMarkdown small {
-            color: #475569 !important; /* Slate-600 - much darker than before */
-            font-size: 0.9rem;
+            transform: translateY(-1px);
         }
 
         /* --------------------------------------
            Tabs
            -------------------------------------- */
         .stTabs [data-baseweb="tab-list"] {
-            background-color: #ffffff;
-            border-bottom: 2px solid #e2e8f0;
-            padding: 0;
-            gap: 20px;
-            margin-bottom: 24px;
-            border-radius: 0;
+            background-color: #ffffff !important;
+            border-radius: 12px;
+            padding: 4px;
+            border: 1px solid #e2e8f0;
+            gap: 8px;
         }
 
         .stTabs [data-baseweb="tab"] {
-            background-color: transparent;
-            border: none;
+            background-color: transparent !important;
+            border: none !important;
             color: #64748b !important;
-            font-weight: 600;
-            padding-bottom: 12px;
+            font-weight: 500;
         }
 
         .stTabs [data-baseweb="tab"][aria-selected="true"] {
+            background-color: #eff6ff !important;
             color: #4f46e5 !important;
-            border-bottom: 3px solid #4f46e5;
+            font-weight: 600;
+            border-radius: 8px;
         }
 
         /* --------------------------------------
