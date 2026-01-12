@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Apply Global Styles
+# Apply Global Styles (Now centrally managed in styles.py)
 apply_custom_styles()
 
 # Initialize session state
@@ -33,70 +33,6 @@ def init_session_state():
         st.session_state.page = "dashboard"
 
 init_session_state()
-
-# Custom CSS for better text visibility
-st.markdown("""
-<style>
-/* Ensure all text is visible */
-.stApp {
-    color: #1a202c !important;
-}
-
-[data-testid="stSidebar"] {
-    color: #1a202c !important;
-}
-
-.stTextInput label, .stTextArea label, .stSelectbox label {
-    color: #374151 !important;
-    font-weight: 600 !important;
-}
-
-.stMarkdown p, .stMarkdown span, .stMarkdown div {
-    color: #1a202c !important;
-}
-
-/* Form labels */
-label {
-    color: #374151 !important;
-    font-weight: 600 !important;
-}
-
-/* Help text */
-.stTextInput [data-testid="stCaptionContainer"] p,
-.stTextArea [data-testid="stCaptionContainer"] p {
-    color: #6b7280 !important;
-}
-
-/* Tab text */
-.stTabs [data-baseweb="tab"] {
-    color: #6b7280 !important;
-}
-
-.stTabs [data-baseweb="tab"][aria-selected="true"] {
-    color: white !important;
-}
-
-/* Metric labels */
-[data-testid="stMetricLabel"] {
-    color: #6b7280 !important;
-}
-
-/* Expander text */
-.streamlit-expanderHeader p {
-    color: #374151 !important;
-}
-
-/* Button text */
-.stButton button p {
-    color: inherit !important;
-}
-
-/* Success/Error text */
-.stSuccess p, .stError p, .stInfo p, .stWarning p {
-    color: inherit !important;
-}
-</style>
-""", unsafe_allow_html=True)
 
 # Main routing logic
 def main():

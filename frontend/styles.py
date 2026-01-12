@@ -3,271 +3,227 @@ import streamlit as st
 def apply_custom_styles():
     st.markdown("""
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-        /* Main Container & Background */
+        :root {
+            --primary: #6366f1;
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --secondary: #4f46e5;
+            --bg-color: #f8fafc;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --text-main: #1e293b;
+            --text-secondary: #64748b;
+        }
+
+        /* --------------------------------------
+           Global & Background
+           -------------------------------------- */
         .stApp {
-            background: #f8fafc;
-            font-family: 'Inter', sans-serif;
-            color: #1a202c;
+            background: #f0f4f8;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-main);
+        }
+        
+        /* Dark mode overrides if needed, but we'll force a specific look here for consistency */
+        .stApp > header {
+            background: rgba(255, 255, 255, 0.7) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
 
-        /* Header Styling */
-        .stApp header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        /* --------------------------------------
+           Typography
+           -------------------------------------- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
         }
 
-        /* Tab Styling */
-        .stTabs [data-baseweb="tab-list"] {
-            gap: 8px;
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 4px;
-            border: 1px solid #e5e7eb;
+        h1 {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800 !important;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 10px rgba(99, 102, 241, 0.2);
         }
 
-        .stTabs [data-baseweb="tab"] {
-            background: transparent;
-            border-radius: 6px;
-            color: #6b7280;
-            font-weight: 500;
-            padding: 8px 16px;
-            transition: all 0.2s;
-        }
-
-        .stTabs [data-baseweb="tab"]:hover {
-            background: #f3f4f6;
-            color: #374151;
-        }
-
-        .stTabs [data-baseweb="tab"][aria-selected="true"] {
-            background: #3b82f6;
-            color: white;
-            font-weight: 600;
-        }
-
-        /* Card/Container Styling */
-        [data-testid="stVerticalBlockBorderWrapper"], .stContainer {
-            background: #ffffff;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            padding: 24px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            margin: 8px 0;
-            transition: box-shadow 0.2s;
+        /* --------------------------------------
+           Containers & Cards (Glassmorphism)
+           -------------------------------------- */
+        [data-testid="stVerticalBlockBorderWrapper"],
+        .stContainer, 
+        .stForm {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 10px 15px -3px rgba(0, 0, 0, 0.05),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            padding: 2rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         [data-testid="stVerticalBlockBorderWrapper"]:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
 
-        /* Inputs (Text Area, Text Input) */
-        .stTextInput>div>div>input, .stTextArea>div>div>textarea, .stSelectbox>div>div>select {
-            background: #ffffff;
-            color: #1a202c;
-            border-radius: 8px;
+        /* --------------------------------------
+           Inputs & Controls
+           -------------------------------------- */
+        .stTextInput>div>div>input, 
+        .stTextArea>div>div>textarea, 
+        .stSelectbox>div>div>select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
             padding: 12px 16px;
-            border: 1px solid #d1d5db;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            font-size: 14px;
-        }
-
-        .stTextInput>div>div>input:focus, .stTextArea>div>div>textarea:focus, .stSelectbox>div>div>select:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-            outline: none;
-        }
-
-        /* Labels */
-        .stTextInput label, .stTextArea label, .stSelectbox label, .stFileUploader label {
-            color: #374151;
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        /* Buttons */
-        .stButton>button {
-            background: #3b82f6;
-            color: white;
-            font-weight: 600;
-            border: none;
-            border-radius: 8px;
-            padding: 12px 24px;
+            font-size: 0.95rem;
             transition: all 0.2s;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .stTextInput>div>div>input:focus, 
+        .stTextArea>div>div>textarea:focus, 
+        .stSelectbox>div>div>select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+            transform: scale(1.005);
+        }
+
+        /* --------------------------------------
+           Buttons
+           -------------------------------------- */
+        .stButton>button {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 0.6rem 1.2rem;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.02em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+            text-transform: uppercase;
+            font-size: 0.85rem;
         }
 
         .stButton>button:hover {
-            background: #2563eb;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.4);
         }
 
         .stButton>button:active {
             transform: translateY(0);
         }
 
-        /* Primary buttons */
-        .stButton>button[data-testid="stBaseButton-primary"] {
-            background: #3b82f6;
+        /* Secondary buttons (use a different style if we can target them, 
+           default streamlit buttons are all similar class, relying on primary attribute) */
+
+        /* --------------------------------------
+           Tabs
+           -------------------------------------- */
+        .stTabs [data-baseweb="tab-list"] {
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+            padding: 8px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.4);
+            gap: 8px;
+            margin-bottom: 24px;
         }
 
-        .stButton>button[data-testid="stBaseButton-primary"]:hover {
-            background: #2563eb;
+        .stTabs [data-baseweb="tab"] {
+            border-radius: 10px;
+            padding: 8px 20px;
+            font-weight: 500;
+            color: #64748b;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Headlines */
-        h1, h2, h3, h4 {
-            color: #1a202c;
-            font-weight: 700;
-            margin-bottom: 16px;
+        .stTabs [data-baseweb="tab"]:hover {
+            color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
         }
 
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 8px;
+        .stTabs [data-baseweb="tab"][aria-selected="true"] {
+            background: white;
+            color: var(--primary);
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
-        h2 {
-            font-size: 1.8rem;
-            border-bottom: 2px solid #3b82f6;
-            padding-bottom: 8px;
-            margin-top: 32px;
+        /* --------------------------------------
+           Metrics & Stats
+           -------------------------------------- */
+        [data-testid="stMetric"] {
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-
-        h3 {
-            font-size: 1.4rem;
-            color: #374151;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            color: #4b5563;
-        }
-
-        /* Metrics */
+        
         [data-testid="stMetricValue"] {
-            color: #1a202c;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 
-        [data-testid="stMetricDelta"] {
-            color: #059669;
-            font-weight: 600;
-        }
-
-        [data-testid="stMetricDelta"][data-testid="stMetricDelta-negative"] {
-            color: #dc2626;
-        }
-
-        /* Success/Error Messages */
-        .stSuccess {
-            background: #dcfce7;
-            color: #166534;
-            border: 1px solid #bbf7d0;
-            border-radius: 8px;
-            padding: 16px;
-        }
-
-        .stError {
-            background: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-            border-radius: 8px;
-            padding: 16px;
-        }
-
-        .stInfo {
-            background: #eff6ff;
-            color: #1e40af;
-            border: 1px solid #bfdbfe;
-            border-radius: 8px;
-            padding: 16px;
-        }
-
-        .stWarning {
-            background: #fffbeb;
-            color: #92400e;
-            border: 1px solid #fed7aa;
-            border-radius: 8px;
-            padding: 16px;
-        }
-
-        /* Expander */
+        /* --------------------------------------
+           Expanders
+           -------------------------------------- */
         .streamlit-expanderHeader {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 12px 16px;
-            font-weight: 600;
-            color: #374151;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            color: #1e293b;
         }
 
-        .streamlit-expanderHeader:hover {
-            background: #f3f4f6;
+        /* --------------------------------------
+           Animations
+           -------------------------------------- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Progress Bar */
-        .stProgress > div > div {
-            background: #3b82f6;
+        .element-container {
+            animation: fadeIn 0.5s ease-out forwards;
         }
 
-        /* File Uploader */
-        .stFileUploader > div > div > div > div {
-            border: 2px dashed #d1d5db;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: border-color 0.2s;
-        }
-
-        .stFileUploader > div > div > div > div:hover {
-            border-color: #3b82f6;
-        }
-
-        /* Custom Scrollbar */
+        /* --------------------------------------
+           Custom Scrollbar
+           -------------------------------------- */
         ::-webkit-scrollbar {
             width: 8px;
-            height: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #f1f5f9;
+            background: transparent;
         }
         ::-webkit-scrollbar-thumb {
             background: #cbd5e1;
-            border-radius: 4px;
+            border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
 
-        /* Spinner */
-        .stSpinner > div > div {
-            border-color: #3b82f6;
-        }
-
-        /* Hide Streamlit branding */
+        /* Hide branding */
         #MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
-
-        /* Custom spacing */
-        .element-container {
-            margin-bottom: 16px;
-        }
-
-        /* Form styling */
-        .stForm {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 24px;
-        }
-
+        
     </style>
     """, unsafe_allow_html=True)
