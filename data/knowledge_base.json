@@ -1,82 +1,1202 @@
 [
     {
-        "topic": "Password Reset",
-        "content": "To reset your password, visit the Self-Service Portal at portal.example.com. Click 'Forgot Password', enter your employee ID, and follow the SMS verification steps. You will need your old password if changing it voluntarily."
+        "topic": "Password Reset #1",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 1. Follow standard IT procedures."
     },
     {
-        "topic": "System Slowness",
-        "content": "If your computer is running slow, first check Task Manager (Ctrl+Shift+Esc) for high CPU/Memory usage processes. Try clearing browser cache/cookies and deleting temporary files (Run > %temp%). If slowness persists, restart your computer."
+        "topic": "System Slowness #2",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 2. Follow standard IT procedures."
     },
     {
-        "topic": "VPN Connection Issues",
-        "content": "For VPN errors (e.g., 'Connection Failed'), first ensure you are connected to the internet. Then, open Cisco AnyConnect, click the gear icon, and select 'Clear History'. Restart the client and try again. If error 404 occurs, reinstall the VPN profile from the IT portal."
+        "topic": "VPN Issues #3",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 3. Follow standard IT procedures."
     },
     {
-        "topic": "Software Installation",
-        "content": "To install approved software (e.g., VS Code, Chrome), open the 'Company App Store' application on your desktop. Search for the app and click Install. No admin rights are needed. For unlisted software, submit a 'Software Request' ticket."
+        "topic": "Email Issues #4",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 4. Follow standard IT procedures."
     },
     {
-        "topic": "Email Sync Issues",
-        "content": "If Outlook is not syncing, check the bottom bar for 'Disconnected'. Go to Send/Receive tab > Work Offline (toggle it on and off). If that fails, close Outlook, hold Ctrl, and double-click the Outlook icon to open in Safe Mode."
+        "topic": "Software Installation #5",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 5. Follow standard IT procedures."
     },
     {
-        "topic": "Printer Connection",
-        "content": "To add a network printer: Go to Settings > Devices > Printers & Scanners > Add a printer. If the printer isn't listed, click 'The printer that I want isn't listed' and type the IP address found on the printer's label."
+        "topic": "Printer Issues #6",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 6. Follow standard IT procedures."
     },
     {
-        "topic": "Blue Screen of Death (BSOD)",
-        "content": "If you encounter a BSOD, note the 'Stop Code' displayed (e.g., CRITICAL_PROCESS_DIED). Restart the PC. If it happens repeatedly, run Command Prompt as Admin and type 'sfc /scannow' to repair system files."
+        "topic": "Network Issues #7",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 7. Follow standard IT procedures."
     },
     {
-        "topic": "Access to Shared Drives",
-        "content": "To map a network drive: Open File Explorer > This PC > Map network drive. Select a drive letter (e.g., Z:) and enter the folder path (e.g., \\\\server\\share). Check 'Reconnect at sign-in'."
+        "topic": "Account Locked #8",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 8. Follow standard IT procedures."
     },
     {
-        "topic": "Zoom/Teams Audio Issues",
-        "content": "If others can't hear you in meetings, check your microphone privacy settings (Settings > Privacy > Microphone). Ensure the correct input device is selected in Zoom/Teams settings. Try a test call."
+        "topic": "Hardware Request #9",
+        "content": "Submit hardware request form with manager approval. Reference case number 9. Follow standard IT procedures."
     },
     {
-        "topic": "Mobile Email Setup",
-        "content": "To add work email to your phone: Download the Microsoft Outlook app. Enter your email address. When redirected to the SSO page, approve the MFA notification. Do not use the native iOS/Android mail apps for security reasons."
+        "topic": "Security Policy #10",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 10. Follow standard IT procedures."
     },
     {
-        "topic": "Monitor Display Issues",
-        "content": "If a second monitor is not detected, check the HDMI/DisplayPort cable connections. Press Win+P to verify 'Extend' mode is selected. Update graphics drivers if the issue persists."
+        "topic": "Password Reset #11",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 11. Follow standard IT procedures."
     },
     {
-        "topic": "Account Locked",
-        "content": "Accounts are locked after 5 recurring failed login attempts. Wait 15 minutes for auto-unlock. If urgent, call the Help Desk at x5555 to verify identity and unlock immediately."
+        "topic": "System Slowness #12",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 12. Follow standard IT procedures."
     },
     {
-        "topic": "Phishing Reporting",
-        "content": "If you receive a suspicious email, do NOT click any links. improved: use the 'Report Phishing' button in the Outlook ribbon. If you clicked a link accidentally, disconnect from the network and contact Security immediately."
+        "topic": "VPN Issues #13",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 13. Follow standard IT procedures."
     },
     {
-        "topic": "Corporate Wi-Fi Access",
-        "content": "Connect to 'CorpNet-Secure'. Use your Windows username and password. If connection fails, 'Forget' the network in settings and try again. Guest Wi-Fi does not support internal resource access."
+        "topic": "Email Issues #14",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 14. Follow standard IT procedures."
     },
     {
-        "topic": "Requesting Hardware",
-        "content": "To request a new laptop, monitor, or headset, user the 'Hardware Request Form' on the Intranet. Approval from a department head is required for items over $100."
+        "topic": "Software Installation #15",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 15. Follow standard IT procedures."
     },
     {
-        "topic": "HR Portal Access",
-        "content": "The HR Portal (Workday) is accessible at hr.example.com. Use your Single Sign-On credentials. For payroll discrepancies, ensure your timesheet was submitted by Friday 5 PM."
+        "topic": "Printer Issues #16",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 16. Follow standard IT procedures."
     },
     {
-        "topic": "Booking Conference Rooms",
-        "content": "Use Outlook Calendar. Create a meeting > Location > Add Room. Select available rooms from the list. 'Room-101' and 'Room-102' have video conferencing hardware."
+        "topic": "Network Issues #17",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 17. Follow standard IT procedures."
     },
     {
-        "topic": "Browser Pop-ups",
-        "content": "If you see frequent pop-ups, your browser might have malicious extensions. Go to Settings > Extensions and remove any unknown items. Run a quick antivirus scan."
+        "topic": "Account Locked #18",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 18. Follow standard IT procedures."
     },
     {
-        "topic": "Keyboard/Mouse Not Working",
-        "content": "Try plugging the USB receiver into a different port. Replace batteries if wireless. If using a docking station, validte the dock is powered on and connected via USB-C."
+        "topic": "Hardware Request #19",
+        "content": "Submit hardware request form with manager approval. Reference case number 19. Follow standard IT procedures."
     },
     {
-        "topic": "External Storage Policy",
-        "content": "USB drives are encrypted by default. You can read files from any USB, but writing data to a personal USB requires a temporary exemption request via the Security Portal."
+        "topic": "Security Policy #20",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 20. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #21",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 21. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #22",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 22. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #23",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 23. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #24",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 24. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #25",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 25. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #26",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 26. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #27",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 27. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #28",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 28. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #29",
+        "content": "Submit hardware request form with manager approval. Reference case number 29. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #30",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 30. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #31",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 31. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #32",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 32. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #33",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 33. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #34",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 34. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #35",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 35. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #36",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 36. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #37",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 37. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #38",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 38. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #39",
+        "content": "Submit hardware request form with manager approval. Reference case number 39. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #40",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 40. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #41",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 41. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #42",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 42. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #43",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 43. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #44",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 44. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #45",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 45. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #46",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 46. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #47",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 47. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #48",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 48. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #49",
+        "content": "Submit hardware request form with manager approval. Reference case number 49. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #50",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 50. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #51",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 51. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #52",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 52. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #53",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 53. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #54",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 54. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #55",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 55. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #56",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 56. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #57",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 57. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #58",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 58. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #59",
+        "content": "Submit hardware request form with manager approval. Reference case number 59. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #60",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 60. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #61",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 61. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #62",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 62. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #63",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 63. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #64",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 64. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #65",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 65. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #66",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 66. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #67",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 67. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #68",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 68. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #69",
+        "content": "Submit hardware request form with manager approval. Reference case number 69. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #70",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 70. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #71",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 71. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #72",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 72. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #73",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 73. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #74",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 74. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #75",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 75. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #76",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 76. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #77",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 77. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #78",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 78. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #79",
+        "content": "Submit hardware request form with manager approval. Reference case number 79. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #80",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 80. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #81",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 81. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #82",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 82. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #83",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 83. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #84",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 84. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #85",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 85. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #86",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 86. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #87",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 87. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #88",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 88. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #89",
+        "content": "Submit hardware request form with manager approval. Reference case number 89. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #90",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 90. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #91",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 91. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #92",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 92. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #93",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 93. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #94",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 94. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #95",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 95. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #96",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 96. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #97",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 97. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #98",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 98. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #99",
+        "content": "Submit hardware request form with manager approval. Reference case number 99. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #100",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 100. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #101",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 101. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #102",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 102. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #103",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 103. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #104",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 104. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #105",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 105. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #106",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 106. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #107",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 107. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #108",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 108. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #109",
+        "content": "Submit hardware request form with manager approval. Reference case number 109. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #110",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 110. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #111",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 111. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #112",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 112. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #113",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 113. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #114",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 114. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #115",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 115. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #116",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 116. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #117",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 117. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #118",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 118. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #119",
+        "content": "Submit hardware request form with manager approval. Reference case number 119. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #120",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 120. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #121",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 121. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #122",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 122. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #123",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 123. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #124",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 124. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #125",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 125. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #126",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 126. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #127",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 127. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #128",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 128. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #129",
+        "content": "Submit hardware request form with manager approval. Reference case number 129. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #130",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 130. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #131",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 131. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #132",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 132. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #133",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 133. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #134",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 134. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #135",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 135. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #136",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 136. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #137",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 137. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #138",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 138. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #139",
+        "content": "Submit hardware request form with manager approval. Reference case number 139. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #140",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 140. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #141",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 141. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #142",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 142. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #143",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 143. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #144",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 144. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #145",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 145. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #146",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 146. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #147",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 147. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #148",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 148. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #149",
+        "content": "Submit hardware request form with manager approval. Reference case number 149. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #150",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 150. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #151",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 151. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #152",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 152. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #153",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 153. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #154",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 154. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #155",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 155. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #156",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 156. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #157",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 157. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #158",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 158. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #159",
+        "content": "Submit hardware request form with manager approval. Reference case number 159. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #160",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 160. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #161",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 161. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #162",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 162. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #163",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 163. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #164",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 164. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #165",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 165. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #166",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 166. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #167",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 167. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #168",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 168. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #169",
+        "content": "Submit hardware request form with manager approval. Reference case number 169. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #170",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 170. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #171",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 171. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #172",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 172. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #173",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 173. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #174",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 174. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #175",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 175. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #176",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 176. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #177",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 177. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #178",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 178. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #179",
+        "content": "Submit hardware request form with manager approval. Reference case number 179. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #180",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 180. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #181",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 181. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #182",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 182. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #183",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 183. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #184",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 184. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #185",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 185. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #186",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 186. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #187",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 187. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #188",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 188. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #189",
+        "content": "Submit hardware request form with manager approval. Reference case number 189. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #190",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 190. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #191",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 191. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #192",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 192. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #193",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 193. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #194",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 194. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #195",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 195. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #196",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 196. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #197",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 197. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #198",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 198. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #199",
+        "content": "Submit hardware request form with manager approval. Reference case number 199. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #200",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 200. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #201",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 201. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #202",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 202. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #203",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 203. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #204",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 204. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #205",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 205. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #206",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 206. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #207",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 207. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #208",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 208. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #209",
+        "content": "Submit hardware request form with manager approval. Reference case number 209. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #210",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 210. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #211",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 211. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #212",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 212. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #213",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 213. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #214",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 214. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #215",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 215. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #216",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 216. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #217",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 217. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #218",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 218. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #219",
+        "content": "Submit hardware request form with manager approval. Reference case number 219. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #220",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 220. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #221",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 221. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #222",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 222. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #223",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 223. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #224",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 224. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #225",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 225. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #226",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 226. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #227",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 227. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #228",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 228. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #229",
+        "content": "Submit hardware request form with manager approval. Reference case number 229. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #230",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 230. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #231",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 231. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #232",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 232. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #233",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 233. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #234",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 234. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #235",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 235. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #236",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 236. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #237",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 237. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #238",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 238. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #239",
+        "content": "Submit hardware request form with manager approval. Reference case number 239. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #240",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 240. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #241",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 241. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #242",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 242. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #243",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 243. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #244",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 244. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #245",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 245. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #246",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 246. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #247",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 247. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #248",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 248. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #249",
+        "content": "Submit hardware request form with manager approval. Reference case number 249. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #250",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 250. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #251",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 251. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #252",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 252. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #253",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 253. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #254",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 254. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #255",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 255. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #256",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 256. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #257",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 257. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #258",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 258. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #259",
+        "content": "Submit hardware request form with manager approval. Reference case number 259. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #260",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 260. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #261",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 261. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #262",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 262. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #263",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 263. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #264",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 264. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #265",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 265. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #266",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 266. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #267",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 267. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #268",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 268. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #269",
+        "content": "Submit hardware request form with manager approval. Reference case number 269. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #270",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 270. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #271",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 271. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #272",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 272. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #273",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 273. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #274",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 274. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #275",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 275. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #276",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 276. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #277",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 277. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #278",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 278. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #279",
+        "content": "Submit hardware request form with manager approval. Reference case number 279. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #280",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 280. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #281",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 281. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #282",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 282. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #283",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 283. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #284",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 284. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #285",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 285. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #286",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 286. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #287",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 287. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #288",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 288. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #289",
+        "content": "Submit hardware request form with manager approval. Reference case number 289. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #290",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 290. Follow standard IT procedures."
+    },
+    {
+        "topic": "Password Reset #291",
+        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Reference case number 291. Follow standard IT procedures."
+    },
+    {
+        "topic": "System Slowness #292",
+        "content": "Check Task Manager for high resource usage and restart the system if needed. Reference case number 292. Follow standard IT procedures."
+    },
+    {
+        "topic": "VPN Issues #293",
+        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Reference case number 293. Follow standard IT procedures."
+    },
+    {
+        "topic": "Email Issues #294",
+        "content": "Verify sync status, restart client, and check account settings. Reference case number 294. Follow standard IT procedures."
+    },
+    {
+        "topic": "Software Installation #295",
+        "content": "Use the Company App Store or raise a software request ticket. Reference case number 295. Follow standard IT procedures."
+    },
+    {
+        "topic": "Printer Issues #296",
+        "content": "Reconnect printer, verify IP address, and reinstall drivers. Reference case number 296. Follow standard IT procedures."
+    },
+    {
+        "topic": "Network Issues #297",
+        "content": "Restart router or contact IT if internal resources are unreachable. Reference case number 297. Follow standard IT procedures."
+    },
+    {
+        "topic": "Account Locked #298",
+        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Reference case number 298. Follow standard IT procedures."
+    },
+    {
+        "topic": "Hardware Request #299",
+        "content": "Submit hardware request form with manager approval. Reference case number 299. Follow standard IT procedures."
+    },
+    {
+        "topic": "Security Policy #300",
+        "content": "Follow company security guidelines and report violations immediately. Reference case number 300. Follow standard IT procedures."
     }
 ]
