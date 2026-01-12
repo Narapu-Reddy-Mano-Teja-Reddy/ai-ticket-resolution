@@ -21,8 +21,8 @@ def save_users(users):
 def login_page():
     st.markdown("""
     <div style='text-align: center; padding: 40px 0 20px 0;'>
-        <h1 style='color: #1a202c; margin: 0; font-size: 3rem; font-weight: 800;'>Welcome Back</h1>
-        <p style='color: #6b7280; margin: 10px 0 0 0; font-size: 1.2rem;'>Sign in to your SupportAI account</p>
+        <h1 style='color: #1e293b; margin: 0; font-size: 3rem; font-weight: 800;'>Welcome Back</h1>
+        <p style='color: #475569; margin: 10px 0 0 0; font-size: 1.2rem; font-weight: 500;'>Sign in to your SupportAI account</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -90,8 +90,8 @@ def login_page():
 def register_page():
     st.markdown("""
     <div style='text-align: center; padding: 40px 0 20px 0;'>
-        <h1 style='color: #1a202c; margin: 0; font-size: 3rem; font-weight: 800;'>Join SupportAI</h1>
-        <p style='color: #6b7280; margin: 10px 0 0 0; font-size: 1.2rem;'>Create your account to get started</p>
+        <h1 style='color: #1e293b; margin: 0; font-size: 3rem; font-weight: 800;'>Join SupportAI</h1>
+        <p style='color: #475569; margin: 10px 0 0 0; font-size: 1.2rem; font-weight: 500;'>Create your account to get started</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -246,10 +246,10 @@ def login_register_page():
 
     # Header with branding
     st.markdown("""
-    <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 0 0 20px 20px; margin-bottom: 30px; text-align: center;'>
-        <div style='background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; backdrop-filter: blur(10px);'>
-            <h1 style='color: white; margin: 0; font-size: 2.5rem; font-weight: 700;'>SupportAI</h1>
-            <p style='color: rgba(255,255,255,0.9); margin: 5px 0 0 0; font-size: 1.1rem;'>Intelligent Knowledge Management Platform</p>
+    <div style='background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); padding: 30px; border-radius: 0 0 20px 20px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);'>
+        <div style='background: rgba(255,255,255,0.15); padding: 20px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);'>
+            <h1 style='color: white; margin: 0; font-size: 2.5rem; font-weight: 800; text-shadow: 0 2px 4px rgba(0,0,0,0.1);'>SupportAI</h1>
+            <p style='color: #ffffff; margin: 5px 0 0 0; font-size: 1.1rem; font-weight: 500;'>Intelligent Knowledge Management Platform</p>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -265,7 +265,7 @@ def login_register_page():
 
     # Footer
     st.markdown("""
-    <div style='text-align: center; color: #9ca3af; font-size: 0.9rem; padding: 30px 0; border-top: 1px solid #e5e7eb; margin-top: 50px;'>
+    <div style='text-align: center; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 30px 0; border-top: 1px solid #e2e8f0; margin-top: 50px;'>
         <p>SupportAI Platform • Version 1.2.0</p>
         <p>© 2024 SupportAI. All rights reserved.</p>
     </div>

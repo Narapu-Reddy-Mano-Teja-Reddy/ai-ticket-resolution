@@ -84,19 +84,49 @@ def apply_custom_styles():
         /* --------------------------------------
            Buttons
            -------------------------------------- */
+        /* Primary Keys */
         .stButton>button {
-            background: var(--primary-gradient);
-            color: #ffffff !important; /* White text on primary buttons */
-            border: none;
-            font-weight: 600;
-            padding: 0.6rem 1.25rem;
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            color: #1e293b !important; /* Dark slate for secondary buttons */
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+            padding: 0.6rem 1.25rem;
+            font-weight: 600;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+        }
+
+        .stButton>button:hover {
+            border-color: #cbd5e1;
+            background-color: #f8fafc;
+            color: #0f172a !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specifically target Primary Buttons to keep them distinct */
+        .stButton>button[data-testid="stBaseButton-primary"] {
+            background: var(--primary-gradient);
+            color: #ffffff !important;
+            border: none;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .stButton>button[data-testid="stBaseButton-primary"]:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
         }
         
-        /* Specific override for text inside buttons to ensure it stays white */
+        /* Button text specific override */
         .stButton>button p {
-            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        /* --------------------------------------
+           Helper Text & Captions
+           -------------------------------------- */
+        .stCaption, [data-testid="stCaptionContainer"], .stMarkdown small {
+            color: #475569 !important; /* Slate-600 - much darker than before */
+            font-size: 0.9rem;
         }
 
         /* --------------------------------------
