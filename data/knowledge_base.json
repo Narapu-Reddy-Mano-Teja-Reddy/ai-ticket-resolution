@@ -1,0 +1,82 @@
+[
+    {
+        "topic": "Password Reset",
+        "content": "To reset your password, visit the Self-Service Portal at portal.example.com. Click 'Forgot Password', enter your employee ID, and follow the SMS verification steps. You will need your old password if changing it voluntarily."
+    },
+    {
+        "topic": "System Slowness",
+        "content": "If your computer is running slow, first check Task Manager (Ctrl+Shift+Esc) for high CPU/Memory usage processes. Try clearing browser cache/cookies and deleting temporary files (Run > %temp%). If slowness persists, restart your computer."
+    },
+    {
+        "topic": "VPN Connection Issues",
+        "content": "For VPN errors (e.g., 'Connection Failed'), first ensure you are connected to the internet. Then, open Cisco AnyConnect, click the gear icon, and select 'Clear History'. Restart the client and try again. If error 404 occurs, reinstall the VPN profile from the IT portal."
+    },
+    {
+        "topic": "Software Installation",
+        "content": "To install approved software (e.g., VS Code, Chrome), open the 'Company App Store' application on your desktop. Search for the app and click Install. No admin rights are needed. For unlisted software, submit a 'Software Request' ticket."
+    },
+    {
+        "topic": "Email Sync Issues",
+        "content": "If Outlook is not syncing, check the bottom bar for 'Disconnected'. Go to Send/Receive tab > Work Offline (toggle it on and off). If that fails, close Outlook, hold Ctrl, and double-click the Outlook icon to open in Safe Mode."
+    },
+    {
+        "topic": "Printer Connection",
+        "content": "To add a network printer: Go to Settings > Devices > Printers & Scanners > Add a printer. If the printer isn't listed, click 'The printer that I want isn't listed' and type the IP address found on the printer's label."
+    },
+    {
+        "topic": "Blue Screen of Death (BSOD)",
+        "content": "If you encounter a BSOD, note the 'Stop Code' displayed (e.g., CRITICAL_PROCESS_DIED). Restart the PC. If it happens repeatedly, run Command Prompt as Admin and type 'sfc /scannow' to repair system files."
+    },
+    {
+        "topic": "Access to Shared Drives",
+        "content": "To map a network drive: Open File Explorer > This PC > Map network drive. Select a drive letter (e.g., Z:) and enter the folder path (e.g., \\\\server\\share). Check 'Reconnect at sign-in'."
+    },
+    {
+        "topic": "Zoom/Teams Audio Issues",
+        "content": "If others can't hear you in meetings, check your microphone privacy settings (Settings > Privacy > Microphone). Ensure the correct input device is selected in Zoom/Teams settings. Try a test call."
+    },
+    {
+        "topic": "Mobile Email Setup",
+        "content": "To add work email to your phone: Download the Microsoft Outlook app. Enter your email address. When redirected to the SSO page, approve the MFA notification. Do not use the native iOS/Android mail apps for security reasons."
+    },
+    {
+        "topic": "Monitor Display Issues",
+        "content": "If a second monitor is not detected, check the HDMI/DisplayPort cable connections. Press Win+P to verify 'Extend' mode is selected. Update graphics drivers if the issue persists."
+    },
+    {
+        "topic": "Account Locked",
+        "content": "Accounts are locked after 5 recurring failed login attempts. Wait 15 minutes for auto-unlock. If urgent, call the Help Desk at x5555 to verify identity and unlock immediately."
+    },
+    {
+        "topic": "Phishing Reporting",
+        "content": "If you receive a suspicious email, do NOT click any links. improved: use the 'Report Phishing' button in the Outlook ribbon. If you clicked a link accidentally, disconnect from the network and contact Security immediately."
+    },
+    {
+        "topic": "Corporate Wi-Fi Access",
+        "content": "Connect to 'CorpNet-Secure'. Use your Windows username and password. If connection fails, 'Forget' the network in settings and try again. Guest Wi-Fi does not support internal resource access."
+    },
+    {
+        "topic": "Requesting Hardware",
+        "content": "To request a new laptop, monitor, or headset, user the 'Hardware Request Form' on the Intranet. Approval from a department head is required for items over $100."
+    },
+    {
+        "topic": "HR Portal Access",
+        "content": "The HR Portal (Workday) is accessible at hr.example.com. Use your Single Sign-On credentials. For payroll discrepancies, ensure your timesheet was submitted by Friday 5 PM."
+    },
+    {
+        "topic": "Booking Conference Rooms",
+        "content": "Use Outlook Calendar. Create a meeting > Location > Add Room. Select available rooms from the list. 'Room-101' and 'Room-102' have video conferencing hardware."
+    },
+    {
+        "topic": "Browser Pop-ups",
+        "content": "If you see frequent pop-ups, your browser might have malicious extensions. Go to Settings > Extensions and remove any unknown items. Run a quick antivirus scan."
+    },
+    {
+        "topic": "Keyboard/Mouse Not Working",
+        "content": "Try plugging the USB receiver into a different port. Replace batteries if wireless. If using a docking station, validte the dock is powered on and connected via USB-C."
+    },
+    {
+        "topic": "External Storage Policy",
+        "content": "USB drives are encrypted by default. You can read files from any USB, but writing data to a personal USB requires a temporary exemption request via the Security Portal."
+    }
+]
