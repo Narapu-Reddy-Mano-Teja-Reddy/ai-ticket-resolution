@@ -33,7 +33,7 @@ def dashboard_ui():
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style='text-align: center; color: #9ca3af; font-size: 0.9rem; padding: 20px 0; border-top: 1px solid #e5e7eb;'>
-        SupportAI Platform • Intelligent Ticket Resolution System
+        Copyrights 2025-2026 AI Ticket Resolution, Designed by Narapu Reddy Mano Teja Reddy
     </div>
     """, unsafe_allow_html=True)
 
@@ -86,17 +86,13 @@ def ticket_assistant():
                 progress_bar = st.progress(0)
                 status_text = st.empty()
 
-                status_text.text("Categorizing ticket...")
-                progress_bar.progress(25)
-                cat = kb_engine.categorize_ticket(txt)
+                status_text.text("Analyzing ticket...")
+                progress_bar.progress(40)
+                
+                # Optimized single-pass analysis
+                cat, recs, sol = kb_engine.analyze_full_ticket(txt)
 
-                status_text.text("Finding relevant articles...")
-                progress_bar.progress(50)
-                recs = kb_engine.recommend_articles(txt)
-
-                status_text.text("Generating solution...")
-                progress_bar.progress(75)
-                sol = kb_engine.generate_solution(txt)
+                status_text.text("Finalizing...")
 
                 progress_bar.progress(100)
                 status_text.empty()

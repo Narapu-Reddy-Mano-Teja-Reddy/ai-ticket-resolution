@@ -2,6 +2,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+import os
+import json
 
 class KnowledgeBaseEngine:
     def __init__(self):
@@ -10,24 +12,23 @@ class KnowledgeBaseEngine:
         self._embeddings = None
         self.retriever = None
         self.initialized = False
+        self.index_path = os.path.join("data", "faiss_index")
 
     @property
     def llm(self):
         if not self._llm:
-            from langchain_ollama import ChatOllama
             self._llm = ChatOllama(
                 model="llama3.2:1b",
                 # Optimize for speed: faster generation, lower context memory
-                num_predict=150, 
-                num_ctx=2048,
-                temperature=0.3
+                num_predict=100,  # Reduced from 150
+                num_ctx=1024,     # Reduced from 2048
+                temperature=0.1   # Reduced for deterministic/faster output
             )
         return self._llm
 
     @property
     def embeddings(self):
         if not self._embeddings:
-            from langchain_ollama import OllamaEmbeddings
             self._embeddings = OllamaEmbeddings(model="llama3.2:1b")
         return self._embeddings
 
@@ -36,7 +37,6 @@ class KnowledgeBaseEngine:
         print("Initializing Knowledge Base...")
         
         # Load from JSON file
-        import json, os
         kb_path = os.path.join("data", "knowledge_base.json")
         self.docs = []
         
@@ -55,10 +55,18 @@ class KnowledgeBaseEngine:
                     {"topic": "Wifi", "content": "Connect to CorpNet-Secure."}
                 ]
 
-            # Try to initialize vector store
+            # Try to load existing vector store or create new one
             try:
-                texts = [f"{d['topic']}: {d['content']}" for d in self.docs]
-                self.retriever = FAISS.from_texts(texts, self.embeddings).as_retriever(search_kwargs={"k": 3})
+                if os.path.exists(self.index_path):
+                    print("Loading cached vector store...")
+                    vectorstore = FAISS.load_local(self.index_path, self.embeddings, allow_dangerous_deserialization=True)
+                    self.retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+                else:
+                    print("Creating new vector store (this may take a moment)...")
+                    texts = [f"{d['topic']}: {d['content']}" for d in self.docs]
+                    vectorstore = FAISS.from_texts(texts, self.embeddings)
+                    vectorstore.save_local(self.index_path)
+                    self.retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
             except Exception as e:
                 print(f"Vector store init failed, using fallback search: {e}")
                 self.retriever = None
@@ -114,7 +122,7 @@ class KnowledgeBaseEngine:
             
             if self._llm:
                 return (ChatPromptTemplate.from_template(
-                    "Short, direct answer for user based on this info:\n{c}\n"
+                    "Answer briefly based on:\n{c}\n"
                     "Question: {t}"
                 ) | self.llm | StrOutputParser()).invoke({"t": text, "c": best_doc})
             else:
@@ -122,6 +130,57 @@ class KnowledgeBaseEngine:
                 return best_doc
         except Exception as e:
             return f"Error generating solution: {e}"
+
+    def analyze_full_ticket(self, text):
+        """
+        Performs retrieval ONCE and generates category, recommendations, and solution.
+        Returns: (category, recommendations_list, solution_text)
+        """
+        self.ensure_kb_initialized()
+        try:
+            # 1. Retrieval (Done ONCE)
+            docs = []
+            if self.retriever:
+                docs = self.retriever.invoke(text)
+            
+            # Fallback if no docs or no retriever
+            if not docs:
+                # Use keyword fallback logic from recommend_articles
+                query_lower = text.lower()
+                matches = []
+                for d in self.docs:
+                    if any(word in d['topic'].lower() or word in d['content'].lower() for word in query_lower.split()):
+                        matches.append(f"{d['topic']}: {d['content']}")
+                recs = matches[:3]
+                best_doc = recs[0] if recs else None
+            else:
+                recs = [d.page_content for d in docs]
+                best_doc = recs[0] if recs else None
+
+            # 2. Categorization
+            category = "General Support"
+            if best_doc:
+                category = best_doc.split(":")[0] if ":" in best_doc else "General Support"
+            elif not self.retriever: # If fallback was used
+                 for d in self.docs:
+                    if any(word in d['topic'].lower() for word in text.lower().split()):
+                        category = d['topic']
+                        break
+
+            # 3. Solution Generation
+            solution = "I couldn't find any specific articles for this issue."
+            if best_doc:
+                if self._llm:
+                    solution = (ChatPromptTemplate.from_template(
+                        "Answer based on:\n{c}\nQ: {t}"
+                    ) | self.llm | StrOutputParser()).invoke({"t": text, "c": best_doc})
+                else:
+                    solution = best_doc
+
+            return category, recs, solution
+
+        except Exception as e:
+            return "Error", [], f"Analysis failed: {e}"
 
     def detect_gaps(self, queries):
         topics = ["password", "billing", "vpn", "software", "meeting", "slack"]
