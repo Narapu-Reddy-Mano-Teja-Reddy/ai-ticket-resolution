@@ -142,7 +142,8 @@ def apply_custom_styles():
             border: 1px solid #000000 !important;
         }
 
-        .stButton > button[data-testid="stBaseButton-primary"] p {
+        .stButton > button[data-testid="stBaseButton-primary"] p,
+        .stButton > button[data-testid="stBaseButton-primary"] div {
              color: #ffffff !important;
         }
 

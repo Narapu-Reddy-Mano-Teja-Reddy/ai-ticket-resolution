@@ -50,7 +50,7 @@ def login_page():
                 remember = st.checkbox("Remember me", value=False)
 
                 submit_btn = st.form_submit_button(
-                    "Sign In",
+                    "Login",
                     use_container_width=True,
                     type="primary"
                 )
@@ -267,7 +267,8 @@ def login_register_page():
     st.markdown("""
     <div style='text-align: center; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 30px 0; border-top: 1px solid #e2e8f0; margin-top: 50px;'>
         <p>SupportAI Platform • Version 1.2.0</p>
-        <p>© 2024 SupportAI. All rights reserved.</p>
+        <p>© 2025-2026 SupportAI. All rights reserved.</p>
+        <p>Designed by NARAPUREDDY MANO TEJA REDDY.</p>
     </div>
     """, unsafe_allow_html=True)
 
