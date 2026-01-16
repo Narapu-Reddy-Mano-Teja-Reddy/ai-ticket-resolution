@@ -172,7 +172,10 @@ class KnowledgeBaseEngine:
             if best_doc:
                 if self._llm:
                     solution = (ChatPromptTemplate.from_template(
-                        "Answer based on:\n{c}\nQ: {t}"
+                        "You are a helpful support agent. Provide a detailed, professional, and clear answer to the user's question using the following internal reference.\n"
+                        "Do NOT explicitly mention 'Reference case number' or internal IDs in your final answer.\n"
+                        "Reference Info:\n{c}\n\n"
+                        "Question: {t}"
                     ) | self.llm | StrOutputParser()).invoke({"t": text, "c": best_doc})
                 else:
                     solution = best_doc

@@ -135,11 +135,11 @@ def apply_custom_styles():
             color: inherit !important;
         }
 
-        /* Primary Buttons - Gradient Background */
+        /* Primary Buttons - Black Box */
         .stButton > button[data-testid="stBaseButton-primary"] {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+            background: #000000 !important;
             color: #ffffff !important;
-            border: none !important;
+            border: 1px solid #000000 !important;
         }
 
         .stButton > button[data-testid="stBaseButton-primary"] p {
