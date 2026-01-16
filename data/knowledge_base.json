@@ -1,42 +1,42 @@
 [
     {
         "topic": "Password Reset",
-        "content": "Reset your password via the Self-Service Portal. Use MFA and follow on-screen steps. Follow standard IT procedures."
+        "content": "To reset your password, visit the Self-Service Portal at portal.company.com. Select 'Forgot Password', complete the Multi-Factor Authentication (MFA) challenge, and follow the on-screen instructions to set a new secure password. Ensure your new password meets complexity requirements."
     },
     {
         "topic": "System Slowness",
-        "content": "Check Task Manager for high resource usage and restart the system if needed. Follow standard IT procedures."
+        "content": "If your system is running slowly, open Task Manager (Ctrl+Shift+Esc) to identify applications with high CPU or Memory usage. End unnecessary tasks. If the issue continues, clear your browser cache and restart your computer to refresh system resources."
     },
     {
         "topic": "VPN Issues",
-        "content": "Ensure internet connectivity, restart VPN client, and reinstall profile if required. Follow standard IT procedures."
+        "content": "For VPN connectivity problems, ensure your internet connection is stable. Open the Cisco AnyConnect client and click 'Disconnect', then 'Connect'. If that fails, restart your computer and try reinstalling the VPN profile from the IT software center."
     },
     {
         "topic": "Email Issues",
-        "content": "Verify sync status, restart client, and check account settings. Follow standard IT procedures."
+        "content": "If Outlook is not syncing, check your internet connection first. close and reopen Outlook. If the issue matches 'Need Password' in the status bar, click it to re-authenticate. You can also try Outlook Web Access (OWA) to verify if the issue is with the client or account."
     },
     {
         "topic": "Software Installation",
-        "content": "Use the Company App Store or raise a software request ticket. Follow standard IT procedures."
+        "content": "Approved software can be installed directly from the Company App Store found in your Start Menu. For software not listed there, please submit a 'Software Request' ticket via the IT Portal. Manager approval is required for licensed software."
     },
     {
         "topic": "Printer Issues",
-        "content": "Reconnect printer, verify IP address, and reinstall drivers. Follow standard IT procedures."
+        "content": "Ensure the printer is powered on and connected to the network. Remove and re-add the printer via 'Printers & Scanners' settings. If printing fails, verify there are no paper jams and that you are on the corporate network/VPN."
     },
     {
         "topic": "Network Issues",
-        "content": "Restart router or contact IT if internal resources are unreachable. Follow standard IT procedures."
+        "content": "Restart your local router/modem. If internal resources are unreachable, verify VPN connection. For office network issues, check if the ethernet cable is secure. Contact IT if multiple users are affected."
     },
     {
         "topic": "Account Locked",
-        "content": "Wait for auto-unlock or contact Help Desk for immediate access. Follow standard IT procedures."
+        "content": "User accounts lock automatically after 5 incorrect password attempts. The account will auto-unlock after 30 minutes. For immediate access, contact the Help Desk to verify your identity and unlock the account manually."
     },
     {
         "topic": "Hardware Request",
-        "content": "Submit hardware request form with manager approval. Follow standard IT procedures."
+        "content": "New hardware requests (monitors, laptops, peripherals) must be submitted via the 'Hardware Request Form' on the IT Portal. These requests require budgetary approval from your line manager before processing."
     },
     {
         "topic": "Security Policy",
-        "content": "Follow company security guidelines and report violations immediately. Follow standard IT procedures."
+        "content": "All employees must adhere to the Information Security Policy. Key points: Lock your screen when away (Win+L), do not share passwords, report suspicious emails using the 'Report Phishing' button, and keep software updated."
     }
 ]

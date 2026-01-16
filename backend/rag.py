@@ -172,8 +172,10 @@ class KnowledgeBaseEngine:
             if best_doc:
                 if self._llm:
                     solution = (ChatPromptTemplate.from_template(
-                        "You are a helpful support agent. Provide a detailed, professional, and clear answer to the user's question using the following internal reference.\n"
-                        "Do NOT explicitly mention 'Reference case number' or internal IDs in your final answer.\n"
+                        "You are a helpful and professional IT Support Agent. "
+                        "Using the Reference Info below, provide a detailed and comprehensive answer to the user's question. "
+                        "Expand on the solution with standard professional troubleshooting steps if the reference is brief.\n"
+                        "Do NOT include the phrase 'Reference Info' or internal IDs (like #123) in your final response.\n\n"
                         "Reference Info:\n{c}\n\n"
                         "Question: {t}"
                     ) | self.llm | StrOutputParser()).invoke({"t": text, "c": best_doc})
