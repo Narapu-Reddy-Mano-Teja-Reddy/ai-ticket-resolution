@@ -30,73 +30,12 @@ def dashboard_ui():
         settings()
 
     # Footer
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style='text-align: center; color: #9ca3af; font-size: 0.9rem; padding: 20px 0; border-top: 1px solid #e5e7eb;'>
         Copyrights 2025-2026 AI Ticket Resolution, Designed by Narapu Reddy Mano Teja Reddy
     </div>
     """, unsafe_allow_html=True)
-
-from io import BytesIO
-from fpdf import FPDF
-from docx import Document
-
-def generate_pdf_report(data):
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
-    
-    pdf.set_font("Arial", 'B', 16)
-    pdf.cell(200, 10, txt="Support Ticket Resolution Report", ln=True, align='C')
-    pdf.ln(10)
-    
-    pdf.set_font("Arial", 'B', 12)
-    pdf.cell(40, 10, "Ticket Details")
-    pdf.ln(8)
-    pdf.set_font("Arial", size=11)
-    
-    # Safe handling of text that might not act like latin-1
-    def clean_text(text):
-        return text.encode('latin-1', 'replace').decode('latin-1')
-
-    pdf.multi_cell(0, 7, txt=f"Title: {clean_text(data['title'])}")
-    pdf.multi_cell(0, 7, txt=f"Priority: {data['priority']}")
-    pdf.multi_cell(0, 7, txt=f"Category: {clean_text(data['category'])}")
-    pdf.ln(5)
-    
-    pdf.set_font("Arial", 'B', 12)
-    pdf.cell(40, 10, "Description")
-    pdf.ln(8)
-    pdf.set_font("Arial", size=11)
-    pdf.multi_cell(0, 7, txt=clean_text(data['query']))
-    pdf.ln(5)
-    
-    pdf.set_font("Arial", 'B', 12)
-    pdf.cell(40, 10, "AI Solution")
-    pdf.ln(8)
-    pdf.set_font("Arial", size=11)
-    pdf.multi_cell(0, 7, txt=clean_text(data['solution']))
-    
-    return pdf.output(dest='S').encode('latin-1')
-
-def generate_docx_report(data):
-    doc = Document()
-    doc.add_heading('Support Ticket Resolution Report', 0)
-    
-    doc.add_heading('Ticket Details', level=1)
-    doc.add_paragraph(f"Title: {data['title']}")
-    doc.add_paragraph(f"Priority: {data['priority']}")
-    doc.add_paragraph(f"Category: {data['category']}")
-    
-    doc.add_heading('Description', level=1)
-    doc.add_paragraph(data['query'])
-    
-    doc.add_heading('AI Solution', level=1)
-    doc.add_paragraph(data['solution'])
-    
-    buffer = BytesIO()
-    doc.save(buffer)
-    buffer.seek(0)
-    return buffer
 
 def ticket_assistant():
     st.markdown("### Create New Support Ticket")
@@ -205,34 +144,8 @@ def ticket_assistant():
                     if st.button("🔄 Re-analyze", use_container_width=True):
                         st.rerun()
                 with col_c:
-                    # Prepare Download Data
-                    ticket_data = {
-                        "title": title,
-                        "priority": priority,
-                        "category": cat,
-                        "query": desc,
-                        "solution": sol
-                    }
-                    
-                    col_d, col_e = st.columns(2)
-                    with col_d:
-                        pdf_data = generate_pdf_report(ticket_data)
-                        st.download_button(
-                            label="📄 PDF",
-                            data=pdf_data,
-                            file_name="ticket_resolution.pdf",
-                            mime="application/pdf",
-                            use_container_width=True
-                        )
-                    with col_e:
-                        docx_data = generate_docx_report(ticket_data)
-                        st.download_button(
-                            label="📝 Word",
-                            data=docx_data,
-                            file_name="ticket_resolution.docx",
-                            mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                            use_container_width=True
-                        )
+                    if st.button("📋 Copy Solution", use_container_width=True):
+                        st.text_area("Copy this solution:", value=sol, height=100)
 
             except Exception as e:
                 st.error(f"Analysis failed: {str(e)}")

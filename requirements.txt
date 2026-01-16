@@ -8,5 +8,3 @@ requests
 python-multipart
 faiss-cpu
 pandas
-fpdf
-python-docx
